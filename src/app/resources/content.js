@@ -2,15 +2,15 @@ import { Logo } from "@/once-ui/components";
 
 const person = {
   firstName: "Vindra",
-  lastName: "August",
+  lastName: "Augustiar",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Developer",
+  role: "Web Developer",
   avatar: "https://i.imgur.com/AkVSsCA.jpeg",
   email: "nopindraaugustiar@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Arabic", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["bahasa", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -63,7 +63,7 @@ const home = {
   subline: (
     <>
       I'm Vindra, a design engineer, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      <br /> and engaging user exprinces.
     </>
   ),
 };
@@ -101,29 +101,32 @@ const about = {
         name: "University jambi",
         description: <>studied computer science.</>,
       },
-      {
-        name: "MAN 1 BUNGO",
-        description: <>studied alquran .</>,
-      },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "hobi",
+    title: "Bahasa pemograman yang saya gunakan",
     skills: [
       {
-        title: "Futsal",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "JavaScript",
+        description: <>web pemograman</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "https://i.imgur.com/XzljWPd.jpeg",
+            src: "https://i.imgur.com/3rRF6fR.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
+        ],
+      },
+      {
+        title: "css",
+        description: <>styling</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
           {
-            src: "https://i.imgur.com/uF0chpH.jpeg",
+            src: "https://i.imgur.com/kc0yPkV.jpeg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -132,7 +135,7 @@ const about = {
       },
       {
         title: "Python",
-        description: <>building program ai.</>,
+        description: <>building program.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -160,7 +163,7 @@ const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  description: `koleksi poto informatika ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
@@ -171,6 +174,21 @@ const gallery = {
     },
     {
       src: "https://i.imgur.com/OugMlWM.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "https://i.imgur.com/XzljWPd.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "https://i.imgur.com/OtrexOf.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "https://i.imgur.com/z8D6NKd.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
