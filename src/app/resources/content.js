@@ -32,6 +32,11 @@ const social = [
     link: "https://github.com/Vindra999",
   },
   {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/vvindraa_",
+  },
+  {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/novindraaugustiarrr",
