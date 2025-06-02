@@ -57,13 +57,13 @@ const home = {
   headline: <>Welcome to my Website</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>My project: <strong className="ml-4">Coming soon</strong></>,
+    href: "",
   },
   subline: (
     <>
-      I'm Vindra, a design engineer, where I craft intuitive
-      <br /> and engaging user exprinces.
+      I'm Vindra is a beginner in programming and still needs guidance.
+      <br /> and is a student in computer science.
     </>
   ),
 };
