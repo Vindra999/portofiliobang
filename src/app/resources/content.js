@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Web Developer",
+  role: "Computer Science",
   avatar: "https://i.imgur.com/AkVSsCA.jpeg",
   email: "nopindraaugustiar@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -62,8 +62,8 @@ const home = {
   },
   subline: (
     <>
-      I'm Vindra is a beginner in programming and still needs guidance.
-      <br /> and is a student in computer science.
+     My name is Vindra, I am a beginner Computer science student who still needs experience.
+      <br />"and Never forget Allah".
     </>
   ),
 };
