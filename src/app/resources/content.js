@@ -91,7 +91,7 @@ const about = {
       <>
        Saya Novindra Augustiar mahasiswa informatika Universitas Jambi.
         <br /> saya berasal dari merangin, jambi, Indonesia.
-        <br /> saya sangat menyukai dunia teknologi, terutama dalam bidang pemgramanan komputer, dan masih banyak lagi hal yang ingin dipelajari di dunia ini.
+        <br /> saya sangat menyukai dunia teknologi, terutama dalam bidang pemograman komputer, dan masih banyak lagi hal yang ingin saya pelajari di dunia ini.
       </>
     ),
   },
