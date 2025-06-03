@@ -45,9 +45,9 @@ export default function About() {
       items: about.studies.institutions.map((institution) => institution.name),
     },
     {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
+      title: about.techStack.title,
+      display: about.techStack.display,
+      items: about.techStack.icons.map((icon) => icon.name),
     },
   ];
   return (
@@ -205,51 +205,62 @@ export default function About() {
             </>
           )}
 
-          {about.technical.display && (
+          {about.techStack.display && (
             <>
               <Heading
                 as="h2"
-                id={about.technical.title}
+                id={about.techStack.title}
                 variant="display-strong-s"
                 marginBottom="40"
               >
-                {about.technical.title}
+                {about.techStack.title}
               </Heading>
+
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
+                {about.techStack.icons.map(
+                  (
+                    icon: { name: string; icon: React.ReactNode; alt?: string },
+                    index: number
+                  ) => {
+                    // Mapping nama ke file ikon di /public/trademark
+                    const trademarkIcons: Record<string, string> = {
+                      javascript: "/trademark/javascript-original.svg",
+                      css: "/trademark/css3-original.svg",
+                      python: "/trademark/python-original.svg",
+                      // Tambah lainnya sesuai nama dan file SVG yang kamu miliki
+                    };
+
+                    const iconKey = icon.name.toLowerCase();
+                    const customIconSrc = trademarkIcons[iconKey];
+
+                    const iconName: string =
+                      typeof icon.icon === "string" ? icon.icon : "";
+
+                    return (
+                      <Flex key={`${icon.name}-${index}`} gap="8" vertical="center">
+                        {customIconSrc ? (
+                          <img
+                            src={customIconSrc}
+                            alt={icon.name}
+                            width={32}
+                            height={32}
+                            style={{ borderRadius: 6 }}
+                          />
+                        ) : (
+                          <Icon name={iconName} />
+                        )}
+
+                        <Text variant="heading-strong-l">{icon.name}</Text>
+
+                        {icon.alt && (
+                          <Text variant="body-default-m" onBackground="neutral-weak">
+                            {icon.alt}
+                          </Text>
+                        )}
                       </Flex>
-                    )}
-                  </Column>
-                ))}
+                    );
+                  }
+                )}
               </Column>
             </>
           )}

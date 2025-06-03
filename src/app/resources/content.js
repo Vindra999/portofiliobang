@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Computer Science",
-  avatar: "https://i.imgur.com/AkVSsCA.jpeg",
+  avatar: "/images/projects/project-01/potoalmetunja.jpg",
   email: "nopindraaugustiar@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["bahasa", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
@@ -103,48 +103,23 @@ const about = {
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Bahasa pemograman yang saya gunakan",
-    skills: [
+
+  techStack: {
+    display: true,
+    title: "Tech Stack",
+    icons: [
       {
-        title: "JavaScript",
-        description: <>web pemograman</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "https://i.imgur.com/3rRF6fR.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "JavaScript",
+        icon: <img src="/trademark/javascript-original.svg" alt="JavaScript" style={{ width: 32, height: 32 }} />,
       },
       {
-        title: "css",
-        description: <>styling</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "https://i.imgur.com/kc0yPkV.jpeg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "Python",
+         icon: <img src="/trademark/python-original.svg" alt="Python" style={{ width: 32, height: 32 }} />,
       },
+
       {
-        title: "Python",
-        description: <>building program.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "https://i.imgur.com/xiqbSpi.jpeg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        name: "CSS",
+        icon: <img src="/trademark/css3-original.svg" alt="CSS" style={{ width: 32, height: 32 }} />,
       },
     ],
   },
@@ -168,7 +143,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "https://i.imgur.com/o3coNom.jpeg",
+      src: "/images/projects/project-01/futsal.jpg",
       alt: "image",
       orientation: "horizontal",
     },
@@ -195,4 +170,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, gallery };
+export { person, social, newsletter, home, about, blog, gallery};
