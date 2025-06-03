@@ -53,8 +53,8 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Welcome to my Website</>,
+  description: `Portfolio website menunjukan kegiatan gueh ${person.role}`,
+  headline: <>Selamat datang di website gueh </>,
   featured: {
     display: true,
     title: <>My project: <strong className="ml-4">Coming soon</strong></>,
@@ -63,7 +63,7 @@ const home = {
   subline: (
     <>
      My name is Vindra, I am a beginner Computer science student who still needs experience.
-      <br />"and Never forget Allah".
+      <br />"Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya."(QS. Al-Baqarah 2:286)".
     </>
   ),
 };
@@ -89,7 +89,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-       Saya Novindra Augustiar mahasiswa informatika Universitas Jambi
+       Saya Novindra Augustiar mahasiswa informatika Universitas Jambi.
+        <br /> saya berasal dari merangin, jambi, Indonesia.
+        <br /> saya sangat menyukai dunia teknologi, terutama dalam bidang pemgramanan komputer, dan masih banyak lagi hal yang ingin dipelajari di dunia ini.
       </>
     ),
   },
@@ -128,7 +130,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Mengerjakan dan melakukan sesuatu yang bermanfaat",
+  title: "BLOG GUWEH",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -148,22 +150,22 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "https://i.imgur.com/OugMlWM.jpeg",
+      src: "/images/projects/project-01/masjid.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "https://i.imgur.com/XzljWPd.jpeg",
+      src: "/images/projects/project-01/batik.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "https://i.imgur.com/OtrexOf.jpeg",
+      src: "/images/projects/project-01/bukber.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "https://i.imgur.com/z8D6NKd.jpeg",
+      src: "/images/projects/project-01/billiard.jpg",
       alt: "image",
       orientation: "horizontal",
     },
