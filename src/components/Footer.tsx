@@ -29,7 +29,7 @@ export const Footer = () => {
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Follow{" "}
             <SmartLink
-              href="https://www.instagram.com/vvindraa_"
+              href="https://www.instagram.com/novindraaugustiarrr"
             >
               Instagram
             </SmartLink>

@@ -34,7 +34,7 @@ const social = [
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/vvindraa_",
+    link: "https://www.instagram.com/novindraaugustiarrr",
   },
   {
     name: "LinkedIn",
@@ -52,7 +52,7 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}'web vindra`,
   description: `Portfolio website menunjukan kegiatan gueh ${person.role}`,
   headline: <>Selamat datang di website gueh </>,
   featured: {
