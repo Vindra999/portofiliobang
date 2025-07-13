@@ -53,7 +53,7 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'web vindra`,
-  description: `Portfolio website menunjukan kegiatan gueh ${person.role}`,
+  description: `Portfolio website guweh ${person.role}`,
   headline: <>Selamat datang di website gueh </>,
   featured: {
     display: true,
@@ -140,27 +140,12 @@ const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `koleksi poto informatika ${person.name}`,
+  description: `koleksi poto guweh ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/projects/project-01/futsal.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/projects/project-01/masjid.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/projects/project-01/batik.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/projects/project-01/bukber.jpg",
       alt: "image",
       orientation: "horizontal",
     },
