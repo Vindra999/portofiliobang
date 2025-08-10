@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Computer Science",
-  avatar: "/images/projects/project-01/sasukepp.jpg",
+  avatar: "/images/projects/project-01/MEITU_20250723_215252715.jpg",
   email: "nopindraaugustiar@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["bahasa", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
@@ -151,6 +151,11 @@ const gallery = {
     },
     {
       src: "/images/projects/project-01/billiard.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/project-01/masjid.jpg",
       alt: "image",
       orientation: "horizontal",
     },
