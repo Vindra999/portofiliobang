@@ -145,7 +145,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/projects/project-01/kabut.jpeg",
+      src: "/images/projects/project-01/kebunteh.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
@@ -156,6 +156,11 @@ const gallery = {
     },
     {
       src: "/images/projects/project-01/gunung7.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+        {
+      src: "/images/projects/project-01/kebunteh2.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
