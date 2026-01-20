@@ -145,7 +145,7 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/projects/project-01/futsal.jpg",
+      src: "/images/projects/project-01/kabut.webp",
       alt: "image",
       orientation: "horizontal",
     },
@@ -155,7 +155,7 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/project-01/masjid.jpg",
+      src: "/images/projects/project-01/gunung7.webp",
       alt: "image",
       orientation: "horizontal",
     },
